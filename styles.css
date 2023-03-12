@@ -76,6 +76,7 @@ span {
 section {
   padding: 160px 15% 120px;
 }
+
 .home {
   position: relative;
   height: 100vh;
@@ -122,12 +123,7 @@ section {
   font-weight: 700;
   line-height: 1.1;
 }
-.home-text p {
-  color: var(--second-color);
-  font-size: var(--p-font);
-  line-height: 1.8;
-  margin-bottom: 40px;
-}
+
 header.sticky {
   background: var(--bg-color);
   border-bottom: 1px solid #ffffff1a;
@@ -424,12 +420,15 @@ form textarea {
     top: 100%;
   }
 }
-
+.secondary-color {
+  color: darkgrey;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 5rem;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -437,7 +436,7 @@ form textarea {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: var(--main-color);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -460,7 +459,7 @@ form textarea {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #ff9f55;
+  border: 4px solid var(--main-color);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -485,9 +484,9 @@ form textarea {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid var(--main-color);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent var(--main-color);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -499,9 +498,9 @@ form textarea {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid var(--main-color);
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent var(--main-color) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -512,9 +511,11 @@ form textarea {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--second-bg-color);
   position: relative;
   border-radius: 6px;
+  border: solid;
+  border-color: var(--main-color);
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
