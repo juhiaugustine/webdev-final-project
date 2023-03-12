@@ -30,7 +30,6 @@
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <!------Home-------->
     <section class="home" id="home">
       <div class="home-text">
         <div class="slide">
@@ -38,18 +37,17 @@
           <span class="two">to</span>
         </div>
         <h1>Juhi Augustine's</h1>
-        <h3>portf<span>lio.</span></h3>
+        <h2>portf<span>lio.</span></h2>
       </div>
     </section>
 
-    <!--------About Me------->
     <section class="about" id="about">
       <div class="about-img">
         <img src="./about_me_pic.jpeg" alt="Picture of Juhi" />
       </div>
       <div class="about-text">
         <h2>About <span>Me</span></h2>
-        <h4>Developer & <span>Designer</span></h4>
+        <h3>Developer & <span>Designer</span></h3>
         <p>
           My name is Juhi (pronouns are she/her) and I am a graduate student
           currenty doing my master's in Computer Science at Portland State
@@ -62,7 +60,6 @@
       </div>
     </section>
 
-    <!------Projects------->
     <section class="projects" id="projects">
       <div class="main-text">
         <h2><span>My</span> Projects</h2>
@@ -120,7 +117,6 @@
       </div>
     </section>
 
-    <!--------Previous Work------->
     <section class="resume" id="resume">
       <div class="main-text">
         <h2><span>Work</span> Experience</h2>
@@ -132,6 +128,7 @@
               <h2>Anna University</h2>
               <p>Bachelor of Engineering</p>
               <p class="secondary-color">Jul 2014 - May 2018</p>
+              <button class="pills-button">Student</button>
             </div>
             <br />
             <p>
@@ -150,6 +147,7 @@
               <h2>Wipro Technologies</h2>
               <p>Senior Project Engineer</p>
               <p class="secondary-color">Jun 2018 - Apr 2022</p>
+              <button class="pills-button">Full Time</button>
             </div>
             <br />
             <p>
@@ -170,6 +168,7 @@
               <h2>Portland State University</h2>
               <p>Master of Science - MS, Computer Science</p>
               <p class="secondary-color">Sep 2022 - Present</p>
+              <button class="pills-button">Student</button>
             </div>
             <br />
             <p>
@@ -184,9 +183,10 @@
         <div class="container right">
           <div class="content">
             <div>
-              <h2>Portland State University - Part Time</h2>
-              <p>IT Support Assistant at SHAC Dental Services</p>
+              <h2>Portland State University - SHAC Dental Services</h2>
+              <p>IT Support Assistant</p>
               <p class="secondary-color">Oct 2022 - Present</p>
+              <button class="pills-button">Part time</button>
             </div>
             <br />
             <p>
@@ -200,11 +200,10 @@
       </div>
     </section>
 
-    <!--------Contact Me------->
     <section class="contact" id="contact">
       <div class="contact-text">
         <h2>Contact <span>Me!</span></h2>
-        <h4>If You Have Any Project In Your Mind.</h4>
+        <h3>If You Have Any Project In Your Mind.</h3>
         <p>
           I'm a passionate Web Developer - creating innovative and excellent
           websites for all your needs across the world.
@@ -227,34 +226,38 @@
         </div>
       </div>
       <div class="contact-form">
-        <form accept="/submit">
-          <input type="name" id="name" placeholder="Your Name" required />
+        <form
+          id="contact-us-form"
+          action="/submit_page.php"
+          onsubmit="submitContactUsForm()"
+        >
+          <input type="text" id="name" placeholder="Your Name" required />
           <label for="name" class="aria-invisible"> Enter your Name </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Your Email Address"
-            required
-          />
+          <input type="email" id="email" placeholder="Your Email" required />
           <label for="email" class="aria-invisible"> Enter your Email </label>
           <textarea
-            name="feedback"
+            name="text"
             id="feedback"
             cols="35"
             rows="10"
-            placeholder="How Can I Help You"
+            placeholder="Feedback"
             required
           ></textarea>
           <label for="feedback" class="aria-invisible">
             How Can I Help you
           </label>
-          <input type="submit" value="Send Message" class="submit" required />
+          <input
+            type="submit"
+            value="Send Message"
+            class="submit"
+            id="submit"
+          />
         </form>
       </div>
+      <div id="snackbar">Thanks for contacting us.</div>
     </section>
 
-    <!-----Theme button ------>
-    <section class="end">
+    <footer class="end">
       <div class="last-text">
         <p>
           Copyright (c) Juhi Augustine Kamaraj Nalli 2023 - CS510 Intro to Web
@@ -266,8 +269,7 @@
           ><i class="bx bx-up-arrow-alt"></i
         ></a>
       </div>
-    </section>
-
-    <script type="text/javascript" src="index.js"></script>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
