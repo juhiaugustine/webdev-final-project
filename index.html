@@ -45,7 +45,7 @@
     <!--------About Me------->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="./about_me_pic.JPG" alt="Picture of Juhi" />
+        <img src="./about_me_pic.jpeg" alt="Picture of Juhi" />
       </div>
       <div class="about-text">
         <h2>About <span>Me</span></h2>
@@ -209,36 +209,45 @@
           I'm a passionate Web Developer - creating innovative and excellent
           websites for all your needs across the world.
         </p>
-        <div class="list">
-          <li><a href="#">971-427-2563</a></li>
-          <li><a href="#">juh3@pdx.edu</a></li>
-          <li><a href="#">juh3@pdx.edu</a></li>
-        </div>
         <div class="contact-icons">
-          <a href="https://www.facebook.com/"
+          <a href="https://www.facebook.com/" aria-label="Facebook Icon"
             ><i class="bx bxl-facebook-square"></i
           ></a>
-          <a href="https://www.instagram.com/"
+          <a
+            href="https://www.instagram.com/artistic_juhi/"
+            aria-label="Instagram Icon"
             ><i class="bx bxl-instagram-alt"></i
           ></a>
-          <a href="https://twitter.com/home"><i class="bx bxl-twitter"></i></a>
-          <a href="https://github.com/juhiaugustine"
+          <a href="https://twitter.com/home" aria-label="Twitter Icon"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://github.com/juhiaugustine" aria-label="Github Icon"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
       </div>
       <div class="contact-form">
         <form accept="/submit">
-          <input type="name" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email Address" required />
+          <input type="name" id="name" placeholder="Your Name" required />
+          <label for="name" class="aria-invisible"> Enter your Name </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <label for="email" class="aria-invisible"> Enter your Email </label>
           <textarea
-            name=""
-            id=""
+            name="feedback"
+            id="feedback"
             cols="35"
             rows="10"
             placeholder="How Can I Help You"
             required
           ></textarea>
+          <label for="feedback" class="aria-invisible">
+            How Can I Help you
+          </label>
           <input type="submit" value="Send Message" class="submit" required />
         </form>
       </div>
@@ -253,11 +262,10 @@
         </p>
       </div>
       <div class="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" aria-label="Up Arrow Icon"
+          ><i class="bx bx-up-arrow-alt"></i
+        ></a>
       </div>
-      <!-- <div class="theme">
-        <button onclick="myFunction()">Toggle dark mode</button>
-      </div> -->
     </section>
 
     <script type="text/javascript" src="index.js"></script>
