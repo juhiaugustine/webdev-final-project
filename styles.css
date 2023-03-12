@@ -12,7 +12,8 @@
   --second-bg-color: #202020;
   --text-color: #fff;
   --second-color: #ccc;
-  --main-color: #30d5c8;
+  /* --main-color: #30d5c8; */
+  --main-color: #1cd05d;
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
@@ -213,12 +214,12 @@ header.sticky {
   font-weight: 500;
   border-radius: 8px;
   border-style: solid;
-  border-color: #30d5c8;
+  border-color: var(--main-color);
   transition: all 0.45s ease;
 }
 .read:hover {
   letter-spacing: 1px;
-  background: darkturquoise;
+  background: var(--main-color);
   color: var(--text-color);
 }
 .box:hover {
