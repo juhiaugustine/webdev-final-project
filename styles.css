@@ -234,16 +234,11 @@ a.disabled {
   align-items: center;
   gap: 2.5rem;
 }
-.contact-text h3 {
-  color: var(--text-color);
-  margin: 18px 0;
-  font-size: 20px;
-  font-weight: 600;
-}
 
 .contact-text h2 {
   font-size: var(--h2-font);
   line-height: 1;
+  margin-bottom: 24px;
 }
 
 .contact-text p {
