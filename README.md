@@ -7,3 +7,11 @@ To view this website you can visit https://juhiaugustine.github.io/webdev-final-
 ### Screenshot
 
 ![Screenshot of the Website](./images/website.jpeg)
+
+### RESOURCES:
+
+[W3Schools](https://www.w3schools.com/)
+Design Inspiration - [Dribble](https://dribbble.com)
+Icons - [BoxIcons](https://boxicons.com/)
+[MDN Documentation](https://developer.mozilla.org/en-US/)
+StackOverflow
