@@ -78,7 +78,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(./juhi_pic.jpeg);
+  background-image: url(./images/juhi_pic.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;

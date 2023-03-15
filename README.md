@@ -6,4 +6,4 @@ To view this website you can visit https://juhiaugustine.github.io/webdev-final-
 
 ### Screenshot
 
-![Screenshot of the Website](./website.jpeg)
+![Screenshot of the Website](./images/website.jpeg)
