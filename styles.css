@@ -6,6 +6,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
 :root {
   --bg-color: #2a2a2a;
   --second-bg-color: #202020;
@@ -16,6 +17,7 @@
   --h2-font: 3rem;
   --p-font: 1.1rem;
 }
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -35,19 +37,23 @@ header {
   border-bottom: 1px solid transparent;
   transition: all 0.45s ease;
 }
+
 .logo {
   color: var(--text-color);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
 }
+
 span {
   color: var(--main-color);
 }
+
 .navlist {
   list-style: none;
   display: flex;
 }
+
 .navlist a {
   color: var(--second-color);
   font-size: 17px;
@@ -55,12 +61,15 @@ span {
   margin: 0 25px;
   transition: all 0.45s ease;
 }
+
 .navlist a:hover {
   color: var(--main-color);
 }
+
 .navlist a.active {
   color: var(--main-color);
 }
+
 #menu-icon {
   font-size: 35px;
   color: var(--text-color);
@@ -85,9 +94,11 @@ section {
   align-items: center;
   justify-content: flex-start;
 }
+
 .slide {
   margin-bottom: 20px;
 }
+
 .one {
   display: inline-block;
   margin-right: 15px;
@@ -100,12 +111,14 @@ section {
   background: var(--main-color);
   color: var(--second-bg-color);
 }
+
 .two {
   display: inline-block;
   color: var(--second-color);
   font-size: 20px;
   font-weight: 500;
 }
+
 .home-text h1 {
   font-size: var(--big-font);
   font-weight: 700;
@@ -113,6 +126,7 @@ section {
   list-style: 1.1;
   margin: 0 0 8px;
 }
+
 .home-text h2 {
   color: var(--text-color);
   margin: 0 0 35px;
@@ -133,16 +147,19 @@ header.sticky {
   align-items: center;
   gap: 1.5rem;
 }
+
 .about-img img {
   max-width: 530px;
   height: auto;
   width: 100%;
   border-radius: 8px;
 }
+
 .about-text h2 {
   font-size: var(--h2-font);
   line-height: 1;
 }
+
 .about-text h3 {
   font-size: 24px;
   font-weight: 600;
@@ -150,6 +167,7 @@ header.sticky {
   line-height: 1.7;
   margin: 15px 0 30px;
 }
+
 .about-text p {
   color: var(--second-color);
   font-size: var(--p-font);
@@ -160,17 +178,21 @@ header.sticky {
 .projects {
   background: var(--second-bg-color);
 }
+
 .main-text {
   text-align: center;
 }
+
 .main-text p {
   color: var(--second-color);
   font-size: 15px;
   margin-bottom: 15px;
 }
+
 .main-text h2 {
   font-size: var(--h2-font);
 }
+
 .projects-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -178,29 +200,34 @@ header.sticky {
   gap: 2.5rem;
   margin-top: 5rem;
 }
+
 .box {
   background: var(--bg-color);
   padding: 35px 45px;
   border-radius: 8px;
   transition: all 0.45s ease;
 }
+
 .project-icons i {
   font-size: 32px;
   margin-bottom: 20px;
   color: var(--main-color);
 }
+
 .box h3 {
   font-size: 24px;
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 15px;
 }
+
 .box p {
   color: var(--second-color);
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 25px;
 }
+
 .read {
   display: inline-block;
   padding: 8px 18px;
@@ -213,20 +240,24 @@ header.sticky {
   border-color: var(--main-color);
   transition: all 0.45s ease;
 }
+
 .read:hover {
   letter-spacing: 1px;
   background: var(--main-color);
   color: var(--text-color);
 }
+
 a.disabled {
   pointer-events: none;
   cursor: default;
   opacity: 0.5;
 }
+
 .box:hover {
   transform: translateY(-8px);
   cursor: pointer;
 }
+
 .contact {
   background: var(--second-bg-color);
   display: grid;
@@ -247,6 +278,7 @@ a.disabled {
   line-height: 1.8;
   margin-bottom: 30px;
 }
+
 .list {
   margin-bottom: 2.8rem;
 }
@@ -261,6 +293,7 @@ a.disabled {
   font-size: 14px;
   transition: all 0.45s ease;
 }
+
 .list li a:hover {
   color: var(--text-color);
   transform: translateX(5px);
@@ -279,10 +312,12 @@ a.disabled {
   margin-right: 15px;
   transition: all 0.45s ease;
 }
+
 .contact-icons i:hover {
   background: var(--text-color);
   color: var(--main-color);
 }
+
 .contact-form form {
   position: relative;
 }
@@ -299,10 +334,12 @@ form textarea {
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
 .contact-form textarea {
   resize: none;
   height: 240px;
 }
+
 .contact-form .submit {
   display: inline-block;
   font-size: 16px;
@@ -311,10 +348,12 @@ form textarea {
   width: 160px;
   transition: all 0.45s ease;
 }
+
 .contact-form .submit:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .end {
   padding: 20px 15%;
   display: flex;
@@ -324,10 +363,12 @@ form textarea {
   gap: 2rem;
   background: var(--bg-color);
 }
+
 .last-text p {
   color: var(--second-color);
   font-size: 14px;
 }
+
 .top i {
   padding: 10px;
   border-radius: 8px;
@@ -341,13 +382,16 @@ form textarea {
     padding: 12px 2.5%;
     transition: 0.1s;
   }
+
   header.sticky {
     padding: 10px 2.5%;
     transition: 0.1s;
   }
+
   section {
     padding: 110px 3% 60px;
   }
+
   .end {
     padding: 15px 3%;
   }
@@ -360,9 +404,11 @@ form textarea {
     --p-font: 1rem;
     transition: 0.1s;
   }
+
   .home-text h3 {
     font-size: 2.5rem;
   }
+
   .home {
     height: 87vh;
   }
@@ -372,23 +418,28 @@ form textarea {
   .about {
     grid-template-columns: 1fr;
   }
+
   .about-img {
     text-align: center;
     order: 2;
   }
+
   .about-img img {
     width: 100%;
     height: auto;
     max-width: 100%;
   }
+
   .contact {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 840px) {
   #menu-icon {
     display: block;
   }
+
   .navlist {
     position: absolute;
     top: -1000px;
@@ -400,6 +451,7 @@ form textarea {
     text-align: left;
     transition: all 0.45s ease;
   }
+
   .navlist a {
     display: block;
     margin: 17px;
@@ -407,16 +459,20 @@ form textarea {
     transition: all 0.45s ease;
     color: var(--text-color);
   }
+
   .navlist a:hover {
     color: var(--main-color);
   }
+
   .navlist a.active {
     color: var(--text-color);
   }
+
   .navlist.open {
     top: 100%;
   }
 }
+
 .secondary-color {
   color: darkgrey;
 }
@@ -572,6 +628,7 @@ form textarea {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -583,6 +640,7 @@ form textarea {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -594,6 +652,7 @@ form textarea {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
@@ -605,6 +664,7 @@ form textarea {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
