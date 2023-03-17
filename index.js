@@ -8,11 +8,11 @@ function handleForm(event) {
 }
 
 function submitContactUsForm() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let feedback = document.getElementById("feedback").value;
+  const name = form.elements.name;
+  const email = form.elements.email;
+  const feedback = form.elements.feedback;
   if (name != "" && email != "" && feedback != "") {
-    var snackBar = document.getElementById("snackbar");
+    const snackBar = document.getElementById("snackbar");
     snackBar.className = "show";
     setTimeout(function () {
       snackBar.className = snackBar.className.replace("show", "");
